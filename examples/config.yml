@@ -3,4 +3,6 @@ cache_file: /var/lib/twitter2campfire.cache
 username: myuser
 password: swordfish
 room: hackers table
+ssl: true
+url: http://search.twitter.com/whatever...
 

@@ -59,6 +59,7 @@ class Twitter2Campfire
   
   def archive_file
     begin
+      `touch #{cachefile}` unless File.exist?(cachefile)
       return File.read(cachefile)
     #rescue
     #  ''
