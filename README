@@ -6,21 +6,25 @@ This script allows you to monitor a Twitter search feed using Campfire.
 
 Here's how to get it set up:
 
-Pre-run: make sure to install gem dependencies:
-
-sudo gem install tinder rio hpricot htmlentities
+  sudo gem install twitter2campfire
 
 then:
 
-1) Check out the repo:
+  twitter2campfire /path/to/config
 
-git clone git://github.com/paulca/twitter2campfire.git
+the config file looks like this:
 
-2) Copy 'run_example.rb' to 'run.rb' and edit it with your credentials and a feed url ( from http://search.twitter.com )
+  subdomain: myco
+  cache_file: /var/lib/twitter2campfire.cache
+  username: myuser
+  password: swordfish
+  room: hackers table
+  ssl: true
+  url: http://search.twitter.com/whatever...
 
-3) Set a cron script to run the script every minute. Something like this should do it:
+Set a cron script to run the script every minute. Something like this should do it:
 
-* * * * * cd /home/twitter2campfire/; ruby run.rb
+* * * * * /usr/local/bin/twitter2campfire /path/to/your/config.yml
 
 Hallelujah, you got Twitter in your Campfire, sweet!
 
