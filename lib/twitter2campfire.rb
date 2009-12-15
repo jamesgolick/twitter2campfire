@@ -6,6 +6,7 @@ require 'ostruct'
 require 'time'
 require 'htmlentities'
 require 'digest/sha1'
+require 'twitter2campfire/cli'
 
 class Twitter2Campfire
   attr_accessor :feed, :campfire, :room, :cachefile, :options

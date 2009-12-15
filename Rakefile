@@ -15,6 +15,7 @@ begin
     gem.add_dependency "tinder"
     gem.add_dependency "hpricot"
     gem.add_dependency "htmlentities"
+    gem.add_dependency "thor"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

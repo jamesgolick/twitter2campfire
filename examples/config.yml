@@ -1,0 +1,6 @@
+subdomain: myco
+cache_file: /var/lib/twitter2campfire.cache
+username: myuser
+password: swordfish
+room: hackers table
+
